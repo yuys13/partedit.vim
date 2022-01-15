@@ -4,6 +4,9 @@
 " License: MIT license
 "=============================================================================
 
+let s:save_cpo = &cpoptions
+set cpoptions&vim
+
 function! partedit#start(ft) range
   let l:lines = getbufline(bufnr('%'), a:firstline, a:lastline)
   let l:filetype = a:ft !=# '' ? a:ft : &filetype
@@ -61,4 +64,7 @@ function! partedit#put()
 
   call winrestview(winview)
 endfunction
+
+let &cpoptions = s:save_cpo
+unlet s:save_cpo
 

@@ -9,6 +9,9 @@ if exists('g:loaded_partedit')
 endif
 let g:loaded_partedit = 1
 
+let s:save_cpo = &cpoptions
+set cpoptions&vim
+
 augroup PartEdit
   autocmd!
 augroup END
@@ -58,4 +61,7 @@ nnoremap <silent> <Plug>(partedit_start) :PartEdit<CR>
 xnoremap <silent> <Plug>(partedit_start) :PartEdit<CR>
 
 nnoremap <silent> <Plug>(partedit_start_context) :<C-u>PartEditContext<CR>
+
+let &cpoptions = s:save_cpo
+unlet s:save_cpo
 
