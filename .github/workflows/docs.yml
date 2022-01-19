@@ -1,0 +1,25 @@
+name: panvimdoc
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - README.md
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    name: readme to vimdoc
+    steps:
+      - uses: actions/checkout@v2
+      - name: panvimdoc
+        uses: kdheepak/panvimdoc@v2.7.1
+        with:
+          vimdoc: partedit
+          pandoc: README.md
+          description: Edit part of file
+      - uses: stefanzweifel/git-auto-commit-action@v4.13.1
+        with:
+          commit_message: "docs: auto generate vimdoc"
+          branch: ${{ github.head_ref }}
