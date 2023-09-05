@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: readme to vimdoc
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: panvimdoc
         uses: kdheepak/panvimdoc@v3.0.6
         with:
