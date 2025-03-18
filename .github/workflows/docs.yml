@@ -12,14 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     name: readme to vimdoc
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: panvimdoc
-        uses: kdheepak/panvimdoc@v4.0.1
+        uses: kdheepak/panvimdoc@662fb20304d20c539fb48a0bda628f5165507de7 # v4.0.1
         with:
           vimdoc: partedit
           pandoc: README.md
           description: Edit part of file
-      - uses: stefanzweifel/git-auto-commit-action@v5.1.0
+      - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5.1.0
         with:
           commit_message: "docs: auto generate vimdoc"
           branch: ${{ github.head_ref }}
