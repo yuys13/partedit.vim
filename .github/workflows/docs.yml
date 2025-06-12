@@ -19,7 +19,7 @@ jobs:
           vimdoc: partedit
           pandoc: README.md
           description: Edit part of file
-      - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5.1.0
+      - uses: stefanzweifel/git-auto-commit-action@778341af668090896ca464160c2def5d1d1a3eb0 # v6.0.1
         with:
           commit_message: "docs: auto generate vimdoc"
           branch: ${{ github.head_ref }}
