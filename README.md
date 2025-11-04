@@ -16,8 +16,6 @@ T.B.D.
 
 T.B.D.
 
-## Requirements
-
 ## Installation
 
 For [vim-plug](https://github.com/junegunn/vim-plug) plugin manager:
