@@ -18,12 +18,12 @@ or CSS inside HTML) with proper filetype support.
 
 ### COMMANDS
 
-:[range]PartEdit {filetype} {:PartEdit}
+:[range]PartEdit {filetype}
 
 : Opens the specified `[range]` in a new buffer with the given `{filetype}`.
 If `{filetype}` is omitted, the current buffer's filetype is used.
 
-:PartEditContext {:PartEditContext}
+:PartEditContext
 
 : Automatically detects the context at the current cursor position (e.g., an
 embedded code block) and opens that range in a temporary buffer with the
