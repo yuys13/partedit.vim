@@ -21,7 +21,14 @@ jobs:
           vimdoc: partedit
           pandoc: README.md
           description: Edit part of file
-      - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5.1.0
-        with:
-          commit_message: "docs: auto generate vimdoc"
-          branch: ${{ github.head_ref }}
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "docs: auto generate vimdoc"
+            git push origin HEAD:master
+          else
+            echo "No changes to commit"
+          fi
