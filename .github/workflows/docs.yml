@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - README.md
+      - .github/workflows/docs.yml
   workflow_dispatch:
 
 jobs:
@@ -22,6 +23,7 @@ jobs:
           vimdoc: partedit
           pandoc: README.md
           description: Edit part of file
+          novimversion: true
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
