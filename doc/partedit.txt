@@ -1,5 +1,5 @@
 *partedit.txt*                                               Edit part of file
-                             For NVIM v0.8.0    Last change: 2026 September 18
+                             For NVIM v0.8.0    Last change: 2026 September 23
 
 ==============================================================================
 Table of Contents                                 *partedit-table-of-contents*
@@ -65,7 +65,7 @@ following `<Plug>` mappings:
     " Start PartEdit in visual mode or by providing a range
     xmap <Leader>pe <Plug>(partedit_start)
     nmap <Leader>pe <Plug>(partedit_start)
-    
+
     " Start PartEdit with automatic context detection
     nmap <Leader>pc <Plug>(partedit_start_context)
 <
