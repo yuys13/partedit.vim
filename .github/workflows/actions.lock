@@ -5,15 +5,15 @@ version: 'v0.0.3'
 workflows:
     '.github/workflows/docs.yml':
         - 'actions/checkout@v7.0.1'
-        - 'kdheepak/panvimdoc@v6.0.0'
+        - 'kdheepak/panvimdoc@v6.1.0'
 dependencies:
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
         commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
         owner_id: 44036562
         repo_id: 197814629
-    'kdheepak/panvimdoc@v6.0.0':
-        ref: 'v6.0.0'
-        commit: 'sha1-4c8eaecb80058694171627629c6ff59bcf41472d'
+    'kdheepak/panvimdoc@v6.1.0':
+        ref: 'v6.1.0'
+        commit: 'sha1-d5aa723b69582b89ff16d86e2e93e735e1ae4ad5'
         owner_id: 1813121
         repo_id: 394350304
