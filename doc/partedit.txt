@@ -1,5 +1,5 @@
 *partedit.txt*                                               Edit part of file
-                                                Last change: 2026 September 23
+                                                 Last change: 2026 November 19
 
 ==============================================================================
 Table of Contents                                 *partedit-table-of-contents*
