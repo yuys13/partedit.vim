@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     name: readme to vimdoc
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
       - name: panvimdoc
-        uses: kdheepak/panvimdoc@4c8eaecb80058694171627629c6ff59bcf41472d # v6.0.0
+        uses: kdheepak/panvimdoc@v6.0.0
         with:
           vimdoc: partedit
           pandoc: README.md
